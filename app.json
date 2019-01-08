@@ -1,0 +1,35 @@
+{
+  "addons": [
+    "logentries",
+    "mongolab"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/RocketChat/meteor-buildpack-horse.git"
+    }
+  ],
+  "env": {
+    "BUILDPACK_URL": {
+      "required": true
+    },
+    "DEPLOY_PLATFORM": {
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "required": true
+    },
+    "MONGODB_URI": {
+      "required": true
+    },
+    "SERVER_URL": "https://emagine-chat.herokuapp.com"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "name": "emaginequality",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
